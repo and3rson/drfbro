@@ -11,10 +11,13 @@ A Django extension that provides a better Django REST Framework browser.
 
 1. Install DRFBro
 
+    ```sh
     pip install drfbro
+    ```
 
 2. Add it to your INSTALLED_APPS
 
+    ```python
     INSTALLED_APPS = [
         # ...
         'rest_framework',
@@ -23,9 +26,11 @@ A Django extension that provides a better Django REST Framework browser.
         'drfbro',
         # ...
     ]
+    ```
 
 3. Enable `TokenAuthentication`  in your DRF config
 
+    ```python
     REST_FRAMEWORK = {
         'DEFAULT_AUTHENTICATION_CLASSES': (
             # ...
@@ -33,14 +38,17 @@ A Django extension that provides a better Django REST Framework browser.
             # ...
         ),
     }
+    ```
 
 4. Add DRFBro to your `urls.py`:
 
+    ```python
     urlpatterns = [
         # ...
             url(r'^drfbro/', include('drfbro.urls')),
         # ...
     ]
+    ```
 
 5. Navigate to `http://127.0.0.1:8000/drfbro`
 

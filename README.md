@@ -12,6 +12,7 @@ A Django extension that provides a better Django REST Framework browser.
 
 - Django 1.9+
 - Django REST Framework 3.6+
+- Python 2.7.x or Python 3.x
 - Built in React & Materialize
 
 # But why?

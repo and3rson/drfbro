@@ -1,4 +1,4 @@
-# DRFBro
+# DRFBro - your **D**jango **R**EST **F**ramework's **Bro**
 
 A Django extension that provides a better Django REST Framework browser.
 

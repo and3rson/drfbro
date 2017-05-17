@@ -2,6 +2,10 @@
 
 A Django extension that provides a better Django REST Framework browser.
 
+![Screenshot 1](images/i1.png)
+![Screenshot 2](images/i2.png)
+![Screenshot 3](images/i3.png)
+
 # Requirements
 
 - Django 1.9+

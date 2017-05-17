@@ -15,20 +15,34 @@ A Django extension that provides a better Django REST Framework browser.
 - Python 2.7.x or Python 3.x
 - Built using React, Materialize.CSS & Highlight.JS
 
-# But why?
+# Features
+
+- Uses DRF Schema API to build a list of callable URLs.
+- Supports & remembers authorization
+- Supports & remembers custom HTTP headers
+- Has two request modes: form input mode & raw body input mode
+- Provides ability to submit only selected fields
+
+# Roadmap
+
+- Fixing upcoming bugs
+- Cleaning up
+- Adding more configuration options
+
+# ...but why?
 
 Swagger? It's great, but...
 
-  - There have been numerous problems integrating it with DRF schema.
-  - It's not as customizable as you'd expect.
+- There have been numerous problems integrating it with DRF schema.
+- It's not as customizable as you'd expect.
 
 DRF Docs?
 
-  - Doesn't work with recent DRF.
+- Doesn't work with recent DRF.
 
 DRF AutoDoc?
 
-  - Doesn't work with recent DRF.
+- Doesn't work with recent DRF.
 
 So I'm writing this yet-another-one browser for DRF API.
 

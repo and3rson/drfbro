@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django REST Framework Navigator</title>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react-dom.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react-modal/1.7.7/react-modal.min.js"></script>
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script> -->
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script type="text/javascript">
+        window.DRFBroConfig = window.DRFBroConfig || {
+            schema: '{% url 'drfbro-schema' %}',
+            log_in: '{% url 'drfbro-login' %}',
+            state: '{% url 'drfbro-state' %}',
+        };
+    </script>
+
+    <style type="text/css">
+        .method-badge {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold;
+            padding: 4px;
+            color: #FFF;
+            background: #AAAAAA;
+            font-family: Monospace, Courier New;
+            line-height: 100%;
+        }
+        .method-get {
+            background: #0055AA;
+        }
+        .method-post {
+            background: #00AA55;
+        }
+        .method-put {
+            background: #AA5500;
+        }
+        .method-patch {
+            background: #AA00AA;
+        }
+        .method-delete {
+            background: #AA0000;
+        }
+        .method-url {
+            margin-left: 10px;
+            font-family: Monospace, Courier New;
+        }
+        .collapsible {
+            margin: 0;
+        }
+        .collapsible-body {
+            padding: 1rem;
+        }
+        .loading {
+            line-height: 100vh;
+            text-align: center;
+            background: #DDDDDD;
+            color: #AAAAAA;
+            font-size: 10vh;
+        }
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .flex-expand {
+            flex: 100;
+        }
+        .full-width {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="loading">Just a moment, buddy...</div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'drfbro/gen/app.js' %}"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='drfbro',
-    version='0.0.1',
+    version='0.0.2',
     description='drfbro - a better Django REST Framework browser.',
     long_description="""drfbro
 ======
